@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+  --color: #333;
+  --font: "Red Hat Display", sans-serif;
+}
+
+body{
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color);
+}
+
+.ancho {
+    max-width: 1200px;
+    margin: auto;
+    /* border: 1px red solid; */
+}
+
+.margen {
+    padding: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* primero */
+.informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collage{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    justify-content: center;
+}
+.linea{
+    border: 1px red solid;
+    width: 60px;
+}
+h1{
+    font-size: 14px;
+    color: red;
+    font-weight: 10;
+}
+h2{
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 10;
+}
+.informacion h2 span{
+    font-weight: 600;
+}
+.collage figure{
+    position: relative;
+}
+.collage figure img{
+    display: block;
+
+}
+
+.sombra:hover{
+    opacity: 1;
+}
+
+.sombra{
+    width: 97%;
+    height: 97%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    
+}
+
+.sombra .descripcion1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.icono-buscar{
+    font-size: 20px;
+    color: #f23f58;
+}
+
+/* segundo */
+.informacion2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.personas{
+    display: flex;
+    gap: 20px;
+
+}
+.contenedor-imagen{
+    /* border: 1px pink solid; */
+    max-width: 220px;
+    margin: auto;
+    
+}
+.contenedor-imagen:hover img{
+    /* para que quede normal la foto */
+    filter: grayscale(0%);
+}
+.contenedor-imagen img{
+    width: 100%;
+    display: block;
+    /* para que este blanco y negro  */
+    filter: grayscale(100%);
+}
+.linea2{
+    border: 1px gray solid;
+    margin: 10px 0px 10px 0px;
+}
+
+.personas .contenedor-imagen .nombre{
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 12px;
+}
+.personas .contenedor-imagen .ocupacion{
+    font-size: 10px;
+    line-height: 16px; 
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* para dejar la letra en un tamaño */
+    
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.iconos a{
+    color: gray;
+    font-size: 10px;
+}
+
+/* tercero */
+.cuadro{
+    display: flex;
+    gap: 20px;
+    
+}
+.seccion3{
+    background-color: #b5b5b5;
+}
+.contenedor-cuadro{
+    /* border: 1px blue solid; */
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.5s linear;
+}
+.contenedor-cuadro:hover {
+    transform: scale(1.05);
+}
+.linea3{
+    border: 1px gray solid;
+    margin: 30px;
+}
+.icono{
+    font-size: 30px;
+    color: gray;
+}
+.cuadro .contenedor-cuadro span{
+    font-size: 25px;
+    margin: 10px;
+}
+h4{
+    font-size: 35px;
+}
+.cuadro .contenedor-cuadro h4 span{
+    font-size: 12px;
+    color: red;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    font-size: 14px;
+    color: gray;
+    line-height: 2.5;
+    /* margin: 20px; */
+}
+
+.boton{
+    border: 2px black solid;
+   /* margin: 40px; */
+   /* width: 60%; */
+   padding: 10px 20px;
+   text-decoration: none;
+    font-size: 14px;
+    color: black;
+    display: inline-block;
+    width: 65%;
+    margin-top: 20px;
+    margin: 20px auto; 
+    font-weight: 600;
+}
+
+
+/* cuarto */
+.contenedor-galeria{
+    /* border: 1px red solid; */
+    width: 320px;
+    background-color: white;  
+}
+
+.imagen-galeria{
+    /* border: 1px green solid; */
+    max-width: 320px;
+    margin: auto;
+    transition: all 0.5s linear;
+    overflow: hidden;
+}
+.imagen-galeria img:hover {
+    transform: scale(1.2);
+}
+.imagen-galeria img{
+    width: 100%;
+    display: block;
+    
+}
+.textos-cuadro{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-galeria .nombre-puesto{
+    font-size: 13px;
+}
+.contenedor-galeria .compu{
+    font-size: 15px;
+    font-weight: 700;
+}
+h5{
+    font-size: 11px;
+    font-weight: 400;
+}
+.contenedor-galeria h5 span{
+    color: red;
+}
+p{
+    font-size: 13px;
+}
+.btn-sincontorno{
+    font-size: 12px;
+    color: gray;
+}
+.linea4{
+    border: 1px gray solid;
+    margin: 10px 0px;
+}
+.seccion4{
+    background-color: #eee;
+}
